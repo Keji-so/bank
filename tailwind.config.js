@@ -17,10 +17,26 @@ module.exports = {
     },
       fontFamily: {
         body: ['Roboto']
-      }
-    },
-  },
-  variants: {
+      },
+      keyframes: {
+        down: {
+          '0%': { 
+            top: '0',
+            height: '0' },
+          '50%': { 
+            top: '0',
+            height: '100%' },
+          '100%': { 
+              top: '100%',
+              height: '0' }
+          }
+        },
+        animation: {
+          down: 'down 3s cubic-bezier(.74, .06, .4, .92) forwards',
+         }
+       },
+     },
+ variants: {
     extend: {},
   },
   plugins: [],

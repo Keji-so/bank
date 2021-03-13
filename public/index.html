@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body class="overflow-x-hidden font-body">
     <div class="body">
-        <div class="first-block"></div>
+        <div id="start" class="flex justify-center items-center text-4xl first-block z-20 absolute w-screen bg-yell top-0 h-0 animate-down">
+            <div id="load" class="opacity-0 bottom-10 text-white"> Loading. . .</div>
+           </div>
 
-        <div class="section-one">
+        <div class="section-one bg-black">
 
-            <nav class="z-10 flex absolute top-7 pl-6 pr-12 w-screen justify-between">
+            <nav class="opacity-100 z-10 flex absolute top-7 pl-6 pr-12 w-screen justify-between" id="nav">
                 <div class="logo">
                     <img class="w-full h-14" src="images/image 2.png" alt="">
                 </div>
@@ -36,19 +40,25 @@
 
             <div class="header flex top-48 z-10 absolute flex-col ml-60">
                 <div class="text-white text-5xl w-92 leading-tight">
-                    <div>We’ve chosen your</div>
-                    <div>growth to be our</div>
-                    <div>first priority</div>
+                    <div class="overflow-hidden">
+                        <span id="first-line" class="inline-block transform translate-y-full">We’ve chosen your</span>
+                    </div>
+                    <div class="overflow-hidden">
+                        <span id="second-line" class="inline-block transform translate-y-full">growth to be our</span>
+                    </div>
+                    <div class="overflow-hidden">
+                        <span id="third-line" class="inline-block transform translate-y-full">first priority</span>
+                      </div>
                       
                 </div>
 
-                <div class="px-3 flex justify-center w-36 text-xs py-2 bg-yell uppercase text-white cursor-pointer mt-14 hover:text-yell hover:bg-transparent  border-2 border-transparent hover:border-yell transition ease-in duration-400">
-                    LEARN MORE
+                <div id="button" class="px-3 flex justify-center w-36 text-xs py-2 bg-yell uppercase text-white cursor-pointer mt-14 hover:text-yell hover:bg-transparent  border-2 border-transparent hover:border-yell transition ease-in duration-400 opacity-100">
+                 <span>LEARN MORE</span>   
                 </div>
 
             </div>
 
-            <svg viewBox="0 0 1920 873" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg id="image" class="opacity-100" viewBox="0 0 1920 873" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect y="-87" width="1920" height="960" fill="url(#pattern0)"/>
                 <rect y="-87" width="1920" height="960" fill="url(#paint0_linear)" fill-opacity="0.75"/>
                 <rect y="-87" width="1920" height="960" fill="url(#paint1_linear)" fill-opacity="0.75"/>
@@ -314,5 +324,7 @@
         </div>
         
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

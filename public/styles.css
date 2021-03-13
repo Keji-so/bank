@@ -31876,6 +31876,40 @@ video {
   }
 }
 
+@-webkit-keyframes down{
+  0%{
+    top: 0;
+    height: 0;
+  }
+
+  50%{
+    top: 0;
+    height: 100%;
+  }
+
+  100%{
+    top: 100%;
+    height: 0;
+  }
+}
+
+@keyframes down{
+  0%{
+    top: 0;
+    height: 0;
+  }
+
+  50%{
+    top: 0;
+    height: 100%;
+  }
+
+  100%{
+    top: 100%;
+    height: 0;
+  }
+}
+
 .animate-none{
   -webkit-animation: none;
           animation: none;
@@ -31899,6 +31933,11 @@ video {
 .animate-bounce{
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-down{
+  -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
 }
 
 @media (min-width: 640px){
@@ -63169,6 +63208,11 @@ video {
   .sm\:animate-bounce{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .sm\:animate-down{
+    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
 
@@ -94441,6 +94485,11 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:animate-down{
+    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+  }
 }
 
 @media (min-width: 1024px){
@@ -125711,6 +125760,11 @@ video {
   .lg\:animate-bounce{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .lg\:animate-down{
+    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
 
@@ -156983,6 +157037,11 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .xl\:animate-down{
+    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+  }
 }
 
 @media (min-width: 1536px){
@@ -188253,5 +188312,10 @@ video {
   .\32xl\:animate-bounce{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-down{
+    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
