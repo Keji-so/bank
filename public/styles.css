@@ -31936,8 +31936,8 @@ video {
 }
 
 .animate-down{
-  -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
-          animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+  -webkit-animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
 }
 
 @media (min-width: 640px){
@@ -63211,8 +63211,8 @@ video {
   }
 
   .sm\:animate-down{
-    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
-            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+    -webkit-animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
 
@@ -94487,8 +94487,8 @@ video {
   }
 
   .md\:animate-down{
-    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
-            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+    -webkit-animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
 
@@ -125763,8 +125763,8 @@ video {
   }
 
   .lg\:animate-down{
-    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
-            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+    -webkit-animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
 
@@ -157039,8 +157039,8 @@ video {
   }
 
   .xl\:animate-down{
-    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
-            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+    -webkit-animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
 
@@ -188315,7 +188315,7 @@ video {
   }
 
   .\32xl\:animate-down{
-    -webkit-animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
-            animation: down 4s cubic-bezier(.74, .06, .4, .92) forwards;
+    -webkit-animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
+            animation: down 3s cubic-bezier(.74, .06, .4, .92) forwards;
   }
 }
